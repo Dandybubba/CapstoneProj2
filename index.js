@@ -1,14 +1,14 @@
 document.addEventListener("DOMContentLoaded", function() {
         
 
-    const progressBar = document.querySelector('.outerRing'),
-    minElem = document.querySelector('#minutes'),
-    secElem = document.querySelector('#seconds'),
-    startStop = document.querySelector('#stsp'),
-    setting = document.querySelector('#setting');
+    const progressBar = $('.outerRing'),
+    minElem = $('.minutes'),
+    secElem = $('.seconds'),
+    startStop = $('.stsp'),
+    setting = $('.setting');
 
-    let minutes = document.querySelector('#minutes').innerHTML,
-    seconds = document.querySelector('#seconds').innerHTML,
+    let minutes = $('.minutes').innerHTML,
+    seconds = $('.seconds').innerHTML,
     progress = null,
     progressStart = 0,
     progressEnd = parseInt(minutes) * 60 + parseInt(seconds),
@@ -55,8 +55,8 @@ document.addEventListener("DOMContentLoaded", function() {
         if (progress) {
             clearInterval(progress);
         }
-        minutes = document.querySelector("#minutes").innerHTML;
-        seconds = document.querySelector("#seconds").innerHTML;
+        minutes = $('.minutes').innerHTML;
+        seconds = $('.seconds').innerHTML;
         toggleSettings = false;
         minElem.contentEditable = false;
         minElem.style.borderBottom = 'none';
