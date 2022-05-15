@@ -1,8 +1,0 @@
-{
-  "scripts":{
-    "start":"sass ./index.scss ./index.css --watch"
-  },
-  "dependencies": {
-    "sass": "^1.49.8"
-  }
-}
